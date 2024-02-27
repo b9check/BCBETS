@@ -116,6 +116,6 @@ def get_DK_bets_analysis():
 
 if __name__ == "__main__":
     Summary = get_DK_bets_analysis()
-    print(Summary)
+    #print(Summary)
 
 

@@ -10,7 +10,6 @@ def home():
     current_metrics, rounded_metrics = get_current_metrics()
     metrics_html = rounded_metrics.to_html(classes='table table-striped', index=False)
     DK_analysis = get_DK_bets_analysis()
-    print(DK_analysis)
     DK_html = DK_analysis.to_html(classes='table table-striped', index=False)
     return render_template('index.html', table1_html=DK_html, table2_html=metrics_html)
 
